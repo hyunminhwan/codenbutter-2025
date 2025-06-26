@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    word-break: keep-all;
+}
+
+body {
+    position: relative;
+
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    object-fit: contain;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo {
+    width: 100px;
+    height: 50px;
+
+    background-image: url('../images/logo_jangboo.png');
+}
+
+header.sticky {
+    position: sticky;
+    top: 0;
+
+    background-color: #fff;
+}
+
+header.sticky .logo {
+    background-image: url('../images/logo_jangboo_black.png');
+}
+
+header.sticky a {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+header .link {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+header a {
+    padding: 10px 20px;
+
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}

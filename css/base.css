@@ -1,0 +1,29 @@
+/* 전체 본문 영역 */
+.main {
+  display: flex; /* 플렉스박스로 자식 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  width: 100%; /* 부모 폭 꽉 채우기 */
+  padding: 20px; /* 적당한 여백 */
+  box-sizing: border-box; /* 패딩 포함 박스 계산 */
+  min-height: 100vh; /* 화면 꽉 채우기(선택) */
+  background-color: #f7f8fa; /* 배경색(선택) */
+}
+
+/* Code&Butter 광고 영역 */
+.main [data-cb-embedded="banner-group"] {
+  width: 100%; /* 부모 .main 내부에서 최대 폭 */
+  max-width: 600px; /* 광고 최대 크기 */
+  height: auto; /* 광고 높이에 맞춰 자동 */
+  overflow: hidden; /* 넘치는 콘텐츠 숨김 */
+}
+
+/* 모바일 대응 (화면이 좁아질 때) */
+@media (max-width: 480px) {
+  .main {
+    padding: 10px;
+  }
+  .main [data-cb-embedded="banner-group"] {
+    max-width: 100%; /* 모바일에선 폭 100% */
+  }
+}
